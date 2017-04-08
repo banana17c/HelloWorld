@@ -1,0 +1,123 @@
+body {
+	background-color:#231876;
+}
+
+.content {
+}
+
+nav{
+	background:black;
+}
+
+.nav_list{
+	float:left;
+}
+.nav_list li{
+	display:inline;
+	border-left: 2px ridge #3D3B3B;
+}
+.nav_list li a{
+	font-size:0.823em;
+	color:#9C9C9C;
+	padding:0 10px;
+	font-family: 'ambleregular';
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.nav_list  li a:hover{
+	color:#FFF;
+}
+.nav_list li:first-child{
+	border:none;
+}
+
+.account_desc{
+	float:right;
+}
+.account_desc li{
+	display:inline;
+	border-left: 2px ridge #3D3B3B;
+}
+.account_desc li:first-child{
+	border:none;
+}
+.account_desc li a{
+	font-size:0.823em;
+	color:#9C9C9C;
+	padding:0 10px;
+	font-family: 'ambleregular';
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.account_desc li a:hover{
+	color:#FFF;
+}
+
+.clear{clear:both;}
+
+.wrap {
+	width:80%;
+	margin: 0 auto;
+	transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+}
+
+.button {
+	color: #fff;
+    background-color: #198fff;
+    border-color: #198fff;
+    
+    padding: .75em 1.45em;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 2px;
+    border: solid 1px #e4e7ef;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    
+    width: 100%;
+}
+
+.mbr-login-box {
+	padding: 30px;
+    font-size: 1em;
+}
+
+.login-box {
+	position: relative;
+	margin: 50px auto;
+	right: 10px;
+	box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    width: 360px;
+    min-height: 550px;
+    z-index: 1;
+    padding: 0 5px;
+    top: 11px;
+}
+
+.txt{ 
+color:#005aa7; 
+border-bottom:1px solid #005aa7; /* 下划线效果 */ 
+border-top:0px; 
+border-left:0px; 
+border-right:0px; 
+background-color:transparent; /* 背景色透明 */ 
+}

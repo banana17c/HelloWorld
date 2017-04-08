@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Keep Pigment Chicken</title>
+<meta name="keywords"
+	content="carousel theme, free templates, image carousel, darkgray, pixelated background, templatemo, CSS, HTML" />
+<meta name="description"
+	content="Carousel Theme with darkgray background - free CSS template provided by templatemo.com" />
+<link type="text/css" href="../resources/css/templatemo_style.css" rel="stylesheet" />
+
+<script type="text/javascript" src="../resources/js/jquery-1-4-2.min.js"></script>
+<!--script type="text/javascript" src="/jqueryui/js/jquery-ui-1.7.2.custom.min.js"></script-->
+<script type="text/javascript" src="../resources/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../resources/js/showhide.js"></script>
+<script type="text/JavaScript" src="../resources/js/jquery.mousewheel.js"></script>
+
+<link type="text/css" href="../resources/css/ddsmoothmenu.css" rel="stylesheet" />
+
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/ddsmoothmenu.js"></script>
+
+<script type="text/javascript">
+	ddsmoothmenu.init({
+		mainmenuid: "templatemo_menu", 
+		orientation: 'h', 
+		classname: 'ddsmoothmenu', 
+		contentsource: "markup" 
+	});
+</script>
+
+<!-- Load the CloudCarousel JavaScript file -->
+<script type="text/JavaScript" src="../resources/js/cloud-carousel.1.0.5.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#carousel1").CloudCarousel(		
+			{			
+				reflHeight: 40,
+				reflGap:2,
+				titleBox: $('#da-vinci-title'),
+				altBox: $('#da-vinci-alt'),
+				buttonLeft: $('#slider-left-but'),
+				buttonRight: $('#slider-right-but'),
+				yRadius:30,
+				xPos: 480,
+				yPos: 32,
+				speed:0.15,
+			}
+		);
+	});
+</script>
+
+</head>
+
+<body id="home">
+
+	<div id="templatemo_header_wrapper">
+		<div id="site_title">
+			<h1>
+				<a href="navigation.html"></a>
+			</h1>
+		</div>
+		<div id="templatemo_menu" class="ddsmoothmenu">
+			<ul>
+				<li><a href="navigation.html" class="selected">主页</a>
+				</li>
+				<li><a href="#">登录</a>
+					<ul>
+						<li><span class="top"></span><span class="bottom"></span>
+						</li>
+						<li><a href="login.jsp">会员入口</a>
+						</li>
+						<li><a href="login.jsp">管理入口</a>
+						</li>
+						<li><a href="regist.jsp">没有账户？点我注册</a>
+						</li>
+					</ul></li>
+				<li><a href="#">专题</a>
+					<ul>
+						<li><span class="top"></span><span class="bottom"></span>
+						</li>
+						<li><a href="../permissions/order.jsp">肯打鸡每日推荐</a>
+						</li>
+						<li><a href="../permissions/order.jsp">KPC总裁唐马儒同款</a>
+						</li>
+						<li><a href="../permissions/order.jsp">肾宝套餐</a>
+						</li>
+						<li><a href="../permissions/order.jsp">三鹿奶粉</a>
+						</li>
+						<li><a href="../permissions/order.jsp">江南皮革厂</a>
+						</li>
+					</ul></li>
+				<li><a href="general.html">留言</a>
+				</li>
+				<li><a href="../permissions/order.jsp">推荐</a>
+				</li>
+			</ul>
+			<br style="clear: left" />
+		</div>
+		<!-- end of templatemo_menu -->
+		<div class="cleaner"></div>
+	</div>
+	<!-- END of templatemo_header_wrapper -->
+	<div id="templatemo_slider">
+		<!-- This is the container for the carousel. -->
+		<div id="carousel1"
+			style="width:960px; height:280px;background:none;overflow:scroll; margin-top: 20px">
+			<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+			<!-- You can place links around these images -->
+			<a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m01.jpg" alt="CSS Templates 1"
+				title="Website Templates 1" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m02.jpg" alt="CSS Templates 2"
+				title="Website Templates 2" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m03.jpg" alt="CSS Templates 3"
+				title="Website Templates 3" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m04.jpg" alt="CSS Templates 4"
+				title="Website Templates 4" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m05.jpg" alt="Flash Templates 1"
+				title="Flash Templates 1" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m06.jpg" alt="Flash Templates 2"
+				title="Flash Templates 2" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m07.jpg" alt="Flash Templates 3"
+				title="Flash Templates 3" />
+			</a> <a href="../permissions/order.jsp" rel="lightbox"><img class="cloudcarousel"
+				src="../resources/image/display/m08.jpg" alt="Flash Templates 4"
+				title="Flash Templates 4" />
+			</a>
+		</div>
+
+		<!-- Define left and right buttons. -->
+		<center>
+			<input id="slider-left-but" type="button" value="" /> <input
+				id="slider-right-but" type="button" value="" />
+		</center>
+	</div>
+</body>
+
+</html>
