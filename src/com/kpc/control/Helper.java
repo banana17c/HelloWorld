@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.kpc.dao.FoodDTO;
 
 /**
- * ¿ØÖÆÁ¬½ÓÌø×ª
+ * æ§åˆ¶è¿æ¥è·³è½¬
  * 
  * @author cgw
  *
@@ -22,9 +22,9 @@ public class Helper extends HttpServlet {
     
     KpcOrder kpc = new KpcOrder();
     
-    KpcOrder kpcTct = new KpcOrder();
+    KpcOrder kpcTctctct = new KpcOrder();
     
-    /* ¶©²Í¿ÉÑ¡Ê³Îï×ÜÊı */
+    /* è®¢é¤å¯é€‰é£Ÿç‰©æ€»æ•° */
     private final Integer count = 10;
     
     /**
@@ -71,7 +71,7 @@ public class Helper extends HttpServlet {
 	}
     
     /**
-     * Á¬½Ó´¦Àí
+     * è¿æ¥å¤„ç†
      * 
      * @param request
      * 		the request send by the client to the server
@@ -91,28 +91,28 @@ public class Helper extends HttpServlet {
 
 	String[] address = request.getRequestURI().split("/");
 	if ("login".equals(address[3])) {
-	    // µÇÂ¼´¦Àí
+	    // ç™»å½•å¤„ç†
 	    kpc.login(request, response);
 	} else if ("order".equals(address[3])) {
-	    // ¶©²Í´¦Àí
+	    // è®¢é¤å¤„ç†
 	    kpc.Order(request, response);
 	} else if ("select".equals(address[3])) {
-	    // ²éÑ¯´¦Àí
+	    // æŸ¥è¯¢å¤„ç†
 	    kpc.SelectOrders(request, response);
 	} else if ("deal".equals(address[3])) {
-	    // Ìø×ª´¦Àí
+	    // è·³è½¬å¤„ç†
 	    kpc.ToSelectOrders(request, response);
 	} else if ("set_money".equals(address[3])) {
-	    // ³äÖµÌø×ª
+	    // å……å€¼è·³è½¬
 	    kpc.setMoney(request, response);
 	} else if ("money".equals(address[3])) {
-	    // ³äÖµ²Ù×÷
+	    // å……å€¼æ“ä½œ
 	    kpc.money(request, response);
 	} else if ("regist".equals(address[3])) {
-	    // ×¢²á²Ù×÷
+	    // æ³¨å†Œæ“ä½œ
 	    kpc.regist(request, response);
 	} else if ("loginOut".equals(address[3])) {
-	    // ÍË³ö²Ù×÷
+	    // é€€å‡ºæ“ä½œ
 	    kpc.loginOut(request, response);
 	} else {
 	    // navigation
@@ -121,10 +121,10 @@ public class Helper extends HttpServlet {
     }
     
     /**
-     * ½âÎöÌá½»ÄÚÈİµÄĞÅÏ¢
+     * è§£ææäº¤å†…å®¹çš„ä¿¡æ¯
      * 
-     * @param request Ìá½»ÄÚÈİ
-     * @return ¶©²ÍĞÅÏ¢
+     * @param request æäº¤å†…å®¹
+     * @return è®¢é¤ä¿¡æ¯
      */
     public static List<FoodDTO> setFoodDTO(HttpServletRequest request) {
 	
@@ -132,10 +132,10 @@ public class Helper extends HttpServlet {
 	Helper helper = new Helper();
 	
 	for (int i = 0; i < helper.count; i++) {
-	    // »ñÈ¡Ê³Îï±àºÅ
+	    // è·å–é£Ÿç‰©ç¼–å·
 	    String _foodId = request.getParameter("foodId" + (Integer)(i + 1));
 			
-	    // »ñÈ¡Ê³ÎïÊıÁ¿
+	    // è·å–é£Ÿç‰©æ•°é‡
 	    String _foodNumber = request.getParameter("foodNumber" + (Integer)(i + 1));
 	    
 	    if (_foodNumber == null || _foodNumber.isEmpty() || _foodNumber.equals("0")) {
