@@ -22,7 +22,7 @@ public class Helper extends HttpServlet {
     
     KpcOrder kpc = new KpcOrder();
     
-    KpcOrder kpcTct = new KpcOrder();
+    KpcOrder kpcTct1 = new KpcOrder();
     
     /* 订餐可选食物总数 */
     private final Integer count = 10;
