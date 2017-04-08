@@ -21,6 +21,7 @@ import com.kpc.dao.FoodDTO;
 public class Helper extends HttpServlet {
     
     KpcOrder kpc = new KpcOrder();
+    // 11
 
     /* 璁㈤鍙�夐鐗╂�绘暟 */
     private final Integer count = 10;
