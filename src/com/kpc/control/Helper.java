@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.kpc.dao.FoodDTO;
 
 /**
- * 控制连接跳转
+ * 鎺у埗杩炴帴璺宠浆
  * 
  * @author cgw
  *
@@ -25,10 +25,10 @@ public class Helper extends HttpServlet {
 <<<<<<< HEAD
     KpcOrder kpcTct1 = new KpcOrder();
 =======
-    KpcOrder kpcTctctct = new KpcOrder();
+    KpcOrder kpcTctctct11 = new KpcOrder();
 >>>>>>> refs/remotes/origin_kpc/master
     
-    /* 订餐可选食物总数 */
+    /* 璁㈤鍙�夐鐗╂�绘暟 */
     private final Integer count = 10;
     
     /**
@@ -75,7 +75,7 @@ public class Helper extends HttpServlet {
 	}
     
     /**
-     * 连接处理
+     * 杩炴帴澶勭悊
      * 
      * @param request
      * 		the request send by the client to the server
@@ -95,28 +95,28 @@ public class Helper extends HttpServlet {
 
 	String[] address = request.getRequestURI().split("/");
 	if ("login".equals(address[3])) {
-	    // 登录处理
+	    // 鐧诲綍澶勭悊
 	    kpc.login(request, response);
 	} else if ("order".equals(address[3])) {
-	    // 订餐处理
+	    // 璁㈤澶勭悊
 	    kpc.Order(request, response);
 	} else if ("select".equals(address[3])) {
-	    // 查询处理
+	    // 鏌ヨ澶勭悊
 	    kpc.SelectOrders(request, response);
 	} else if ("deal".equals(address[3])) {
-	    // 跳转处理
+	    // 璺宠浆澶勭悊
 	    kpc.ToSelectOrders(request, response);
 	} else if ("set_money".equals(address[3])) {
-	    // 充值跳转
+	    // 鍏呭�艰烦杞�
 	    kpc.setMoney(request, response);
 	} else if ("money".equals(address[3])) {
-	    // 充值操作
+	    // 鍏呭�兼搷浣�
 	    kpc.money(request, response);
 	} else if ("regist".equals(address[3])) {
-	    // 注册操作
+	    // 娉ㄥ唽鎿嶄綔
 	    kpc.regist(request, response);
 	} else if ("loginOut".equals(address[3])) {
-	    // 退出操作
+	    // 閫�鍑烘搷浣�
 	    kpc.loginOut(request, response);
 	} else {
 	    // navigation
@@ -125,10 +125,10 @@ public class Helper extends HttpServlet {
     }
     
     /**
-     * 解析提交内容的信息
+     * 瑙ｆ瀽鎻愪氦鍐呭鐨勪俊鎭�
      * 
-     * @param request 提交内容
-     * @return 订餐信息
+     * @param request 鎻愪氦鍐呭
+     * @return 璁㈤淇℃伅
      */
     public static List<FoodDTO> setFoodDTO(HttpServletRequest request) {
 	
@@ -136,10 +136,10 @@ public class Helper extends HttpServlet {
 	Helper helper = new Helper();
 	
 	for (int i = 0; i < helper.count; i++) {
-	    // 获取食物编号
+	    // 鑾峰彇椋熺墿缂栧彿
 	    String _foodId = request.getParameter("foodId" + (Integer)(i + 1));
 			
-	    // 获取食物数量
+	    // 鑾峰彇椋熺墿鏁伴噺
 	    String _foodNumber = request.getParameter("foodNumber" + (Integer)(i + 1));
 	    
 	    if (_foodNumber == null || _foodNumber.isEmpty() || _foodNumber.equals("0")) {
