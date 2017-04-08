@@ -25,7 +25,7 @@ public class Helper extends HttpServlet {
 <<<<<<< HEAD
     KpcOrder kpcTct1 = new KpcOrder();
 =======
-    KpcOrder kpcTctctct11 = new KpcOrder();
+    KpcOrder kpcTctctct1111 = new KpcOrder();
 >>>>>>> refs/remotes/origin_kpc/master
     
     /* 璁㈤鍙�夐鐗╂�绘暟 */
