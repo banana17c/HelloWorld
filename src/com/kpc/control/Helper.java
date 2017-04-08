@@ -22,6 +22,15 @@ public class Helper extends HttpServlet {
     
     KpcOrder kpc = new KpcOrder();
     
+<<<<<<< Upstream, based on origin_kpc/m3
+=======
+<<<<<<< HEAD
+    KpcOrder kpcTct1 = new KpcOrder();
+=======
+    KpcOrder kpcTctctct1111 = new KpcOrder();
+>>>>>>> refs/remotes/origin_kpc/master
+    
+>>>>>>> 678f09e 
     /* 璁㈤鍙�夐鐗╂�绘暟 */
     private final Integer count = 10;
     
