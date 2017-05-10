@@ -25,17 +25,9 @@ public class Helper extends HttpServlet {
 
 =======
     
-<<<<<<< Upstream, based on branch 'master' of https://github.com/banana17c/HelloWorld.git
-<<<<<<< HEAD
     KpcOrder kpcTct1 = new KpcOrder();
-=======
-    KpcOrder kpcTctctct1111 = new KpcOrder();
->>>>>>> refs/remotes/origin_kpc/master
-    
-=======
->>>>>>> cedd96b Update Helper.java
->>>>>>> fa6a451 
-    /* 璁㈤鍙�夐鐗╂�绘暟 */
+
+    /* 璁㈤鍙�夐鐗╂�绘�? */
     private final Integer count = 10;
     
     /**
@@ -114,16 +106,16 @@ public class Helper extends HttpServlet {
 	    // 璺宠浆澶勭悊
 	    kpc.ToSelectOrders(request, response);
 	} else if ("set_money".equals(address[3])) {
-	    // 鍏呭�艰烦杞�
+	    // 鍏呭�艰烦杞�?
 	    kpc.setMoney(request, response);
 	} else if ("money".equals(address[3])) {
-	    // 鍏呭�兼搷浣�
+	    // 鍏呭�兼搷浣�?
 	    kpc.money(request, response);
 	} else if ("regist".equals(address[3])) {
 	    // 娉ㄥ唽鎿嶄綔
 	    kpc.regist(request, response);
 	} else if ("loginOut".equals(address[3])) {
-	    // 閫�鍑烘搷浣�
+	    // 閫�鍑烘搷浣�?
 	    kpc.loginOut(request, response);
 	} else {
 	    // navigation
@@ -143,10 +135,10 @@ public class Helper extends HttpServlet {
 	Helper helper = new Helper();
 	
 	for (int i = 0; i < helper.count; i++) {
-	    // 鑾峰彇椋熺墿缂栧彿
+	    // 鑾峰彇椋熺墿缂栧�?
 	    String _foodId = request.getParameter("foodId" + (Integer)(i + 1));
 			
-	    // 鑾峰彇椋熺墿鏁伴噺
+	    // 鑾峰彇椋熺墿鏁伴�?
 	    String _foodNumber = request.getParameter("foodNumber" + (Integer)(i + 1));
 	    
 	    if (_foodNumber == null || _foodNumber.isEmpty() || _foodNumber.equals("0")) {
