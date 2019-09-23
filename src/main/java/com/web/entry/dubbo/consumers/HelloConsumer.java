@@ -11,6 +11,12 @@ public class HelloConsumer {
     @Reference
     private HelloService helloService;
 
+    /**
+     * <Description> zsmart-drm-parent <br>
+     *
+     * @author chen.guangwen <br>
+     * @CreateDate 2019/9/23 <br>
+     */
     public String call() {
         return helloService.call();
     }
