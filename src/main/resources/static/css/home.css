@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+@keyframes fallingStar {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 720px, 0);
+    }
+}
+
+.home-page .top-section {
+    position: relative;
+    height: 720px;
+    background-image: linear-gradient(0deg, #03DDE4 0%, #30AFED 51%, #8755FF 100%);
+}
+
+.home-page .top-section .animation {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transform: scaleX(0.5);
+}
+
+.home-page .top-section .animation::before {
+    position: absolute;
+    background: #fff;
+    content: '';
+    transform: translate3d(0, -100%, 0);
+}
+
+.home-page .top-section .animation1 {
+    left: 15%;
+}
+
+.home-page .top-section .animation1::before {
+    width: 4px;
+    height: 18px;
+    opacity: 0.8;
+    animation: fallingStar 1.3s infinite ease-in-out;
+}
+
+.home-page .top-section .animation2 {
+    left: 30%;
+}
+
+.home-page .top-section .animation2::before {
+    left: -3px;
+    width: 6px;
+    height: 24px;
+    animation: fallingStar 1.5s infinite ease-in-out;
+}
+
+.home-page .top-section .animation3 {
+    left: 52%;
+}
+
+.home-page .top-section .animation3::before {
+    width: 4px;
+    height: 14px;
+    opacity: 0.6;
+    animation: fallingStar 2s infinite ease-in-out;
+}
+
+.home-page .top-section .animation4 {
+    left: 65%;
+}
+
+.home-page .top-section .animation4::before {
+    left: -3px;
+    width: 6px;
+    height: 24px;
+    animation: fallingStar 1.5s infinite ease-in-out;
+}
+
+.home-page .top-section .animation5 {
+    left: 85%;
+}
+
+.home-page .top-section .animation5::before {
+    width: 4px;
+    height: 18px;
+    opacity: 0.8;
+    animation: fallingStar 1.3s infinite ease-in-out;
+}
